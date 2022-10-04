@@ -4,7 +4,7 @@ Functions to calculate [HMAC-based One Time Password (HOTP)](https://en.wikipedi
 ## Example Usage
 
 ```javascript
-const otp = require('@rbard/otp-js')
+const otp = require('@rbard/otp')
 
 const key = {key: '5RAFOILIBQPR3LOW333VF6DSIQU6M5EN', encoding: 'base32'}
 
@@ -12,7 +12,7 @@ const {token, secondsLeft} = otp.totp(key)
 ```
 
 ```javascript
-const otp = require('@rbard/otp-js')
+const otp = require('@rbard/otp')
 
 const key = {key: '5RAFOILIBQPR3LOW333VF6DSIQU6M5EN', encoding: 'base32'}
 

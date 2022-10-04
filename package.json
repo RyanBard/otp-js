@@ -1,13 +1,25 @@
 {
   "name": "@rbard/otp",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Functions to calculate HMAC-based One Time Password (HOTP) and Time-based One Time Password (TOTP)",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RyanBard/otp-js.git"
+  },
+  "keywords": [
+    "totp",
+    "hotp",
+    "otp"
+  ],
   "author": "Ryan Bard <john.ryan.bard@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RyanBard/otp-js/issues"
+  },
   "dependencies": {
     "hi-base32": "^0.5.1"
   },
