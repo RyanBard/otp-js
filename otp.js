@@ -22,12 +22,8 @@ function totp(key, now = () => Date.now()) {
 // https://en.wikipedia.org/wiki/HMAC-based_one-time_password
 function hotp(key, counter) {
     const hs = hmac(key, counter)
-//    console.log('hs.len: ', hs.length)
-//    console.log('hs: ', hs)
     const binCode = dynamicTruncate(hs)
-//    console.log('binCode: ', binCode)
     const d = binCode % (10 ** defaultNumDigits)
-//    console.log('d: ', d)
     return String(d).padStart(6, '0')
 }
 
